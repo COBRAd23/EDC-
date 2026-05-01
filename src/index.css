@@ -1,0 +1,116 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    /* EDC Arborismo - Dark Forest Theme */
+    --background: 0 0% 4%;            /* #0a0a0a */
+    --foreground: 80 12% 92%;
+
+    --card: 0 0% 6%;
+    --card-foreground: 80 12% 92%;
+
+    --popover: 0 0% 6%;
+    --popover-foreground: 80 12% 92%;
+
+    /* Vibrant arborist green */
+    --primary: 92 75% 50%;            /* vibrant green */
+    --primary-foreground: 0 0% 4%;
+    --primary-glow: 92 90% 60%;
+    --primary-deep: 130 60% 25%;
+
+    --secondary: 0 0% 10%;
+    --secondary-foreground: 80 12% 92%;
+
+    --muted: 0 0% 10%;
+    --muted-foreground: 80 6% 60%;
+
+    --accent: 92 75% 50%;
+    --accent-foreground: 0 0% 4%;
+
+    --destructive: 0 70% 50%;
+    --destructive-foreground: 0 0% 98%;
+
+    --border: 0 0% 14%;
+    --input: 0 0% 12%;
+    --ring: 92 75% 50%;
+
+    --radius: 0.75rem;
+
+    --gradient-hero: linear-gradient(135deg, hsl(0 0% 4%) 0%, hsl(130 30% 8%) 60%, hsl(92 40% 12%) 100%);
+    --gradient-green: linear-gradient(135deg, hsl(92 75% 50%), hsl(130 70% 40%));
+    --gradient-fade-bottom: linear-gradient(180deg, transparent, hsl(0 0% 4%) 90%);
+
+    --shadow-glow: 0 0 40px hsl(92 75% 50% / 0.35);
+    --shadow-glow-strong: 0 0 60px hsl(92 75% 50% / 0.55);
+    --shadow-elevated: 0 30px 80px -20px hsl(0 0% 0% / 0.7);
+
+    --transition-smooth: cubic-bezier(0.22, 1, 0.36, 1);
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  html {
+    scroll-behavior: smooth;
+  }
+  body {
+    @apply bg-background text-foreground antialiased;
+    font-family: 'Inter', system-ui, sans-serif;
+    background-image:
+      radial-gradient(ellipse 80% 50% at 20% 0%, hsl(92 60% 15% / 0.25), transparent 60%),
+      radial-gradient(ellipse 60% 40% at 90% 80%, hsl(130 60% 20% / 0.2), transparent 60%);
+    background-attachment: fixed;
+  }
+  h1, h2, h3, h4 {
+    font-family: 'Space Grotesk', system-ui, sans-serif;
+    letter-spacing: -0.02em;
+  }
+}
+
+@layer components {
+  .glass {
+    @apply backdrop-blur-xl bg-background/60 border border-border/50;
+  }
+  .glass-strong {
+    background: hsl(0 0% 5% / 0.75);
+    backdrop-filter: blur(20px) saturate(180%);
+    border: 1px solid hsl(0 0% 100% / 0.06);
+  }
+  .glow-hover {
+    @apply transition-all duration-300;
+    transition-timing-function: var(--transition-smooth);
+  }
+  .glow-hover:hover {
+    box-shadow: var(--shadow-glow);
+    transform: translateY(-2px);
+  }
+  .text-gradient-green {
+    background: var(--gradient-green);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+  }
+  .grain::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' /%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='0.4'/%3E%3C/svg%3E");
+    opacity: 0.04;
+    pointer-events: none;
+    mix-blend-mode: overlay;
+  }
+}
+
+@layer utilities {
+  .bg-gradient-hero { background: var(--gradient-hero); }
+  .bg-gradient-green { background: var(--gradient-green); }
+  .shadow-glow { box-shadow: var(--shadow-glow); }
+  .shadow-glow-strong { box-shadow: var(--shadow-glow-strong); }
+  .shadow-elevated { box-shadow: var(--shadow-elevated); }
+}
