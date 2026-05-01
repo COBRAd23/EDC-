@@ -46,8 +46,13 @@ const Footer = () => {
                 </a>
               </li>
               <li>
-                <a href="#" className="flex items-center gap-2 text-muted-foreground hover:text-primary transition-colors">
-                  <Instagram className="size-4" /> @edc.arborismo
+                <a
+                  href="https://www.instagram.com/edc_arborismo/"
+                  target="_blank"
+                  rel="noreferrer"
+                  className="flex items-center gap-2 text-muted-foreground hover:text-primary transition-colors"
+                >
+                  <Instagram className="size-4" /> @edc_arborismo
                 </a>
               </li>
             </ul>
