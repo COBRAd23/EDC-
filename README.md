@@ -1,4 +1,4 @@
-# Welcome to your Lovable project
+# Welcome 
 
 # EDC Arborismo - Landing Page & Digital Identity
 
