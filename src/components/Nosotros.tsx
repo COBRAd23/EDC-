@@ -1,5 +1,6 @@
 import { motion } from "framer-motion";
 import { Award, BookOpen, ShieldCheck } from "lucide-react";
+import nosotrosArborista from "@/assets/nosotros-arborista.jpg";
 
 const certs = [
   { name: "ISA", full: "International Society of Arboriculture", icon: Award },
@@ -29,7 +30,7 @@ const Nosotros = () => {
           >
             <div className="relative aspect-[4/5] rounded-2xl overflow-hidden shadow-elevated group">
               <img
-                src="/img/arborista.jpg"
+                src={nosotrosArborista}
                 alt="Arborista trepando un árbol con técnica profesional"
                 className="w-full h-full object-cover transition-transform duration-[1.4s] group-hover:scale-105"
                 loading="lazy"
