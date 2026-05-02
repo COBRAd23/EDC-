@@ -42,7 +42,7 @@ const Navbar = () => {
             <img
               src="/img/logo%20navbar%20y%20footer.png"
               alt="EDC Arborismo"
-              className="h-8 w-auto md:h-9"
+              className="h-7 w-auto md:h-9 object-contain"
               loading="eager"
             />
           </Link>

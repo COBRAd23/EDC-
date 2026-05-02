@@ -85,7 +85,7 @@ const Nosotros = () => {
             {/* Certifications grid */}
             <div className="mt-10">
               <div className="text-xs uppercase tracking-widest text-muted-foreground mb-4">Certificaciones y normas</div>
-              <div className="grid grid-cols-3 gap-3">
+              <div className="grid grid-cols-1 sm:grid-cols-3 gap-3">
                 {certs.map((c, i) => (
                   <motion.div
                     key={c.name}

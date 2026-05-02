@@ -11,7 +11,7 @@ const Footer = () => {
               <img
                 src="/img/logo%20navbar%20y%20footer.png"
                 alt="EDC Arborismo"
-                className="h-9 w-auto"
+                className="h-7 w-auto md:h-9 object-contain"
                 loading="lazy"
               />
             </div>
