@@ -34,7 +34,7 @@ const Hero = () => {
       }} />
 
       <motion.div style={{ opacity }} className="container relative">
-        <div className="pointer-events-none absolute bottom-0 right-0 hidden translate-y-[200px] lg:block xl:right-8 xl:translate-y-[180px]">
+        <div className="pointer-events-none absolute bottom-0 right-0 hidden translate-y-[216px] lg:block xl:right-8 xl:translate-y-[196px]">
           <img
             src="/img/isologo_grande%20header.png"
             alt="Isologo EDC Arborismo"
