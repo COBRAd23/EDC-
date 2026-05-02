@@ -12,7 +12,7 @@ const services = [
       "Evaluación y mitigación de riesgos (árboles peligrosos).",
       "Diagnósticos fitosanitarios y tratamientos específicos.",
     ],
-    image: "https://images.unsplash.com/photo-1502082553048-f009c37129b9?w=900&q=80",
+    image: "/img/palmera.jpg",
   },
   {
     icon: Scissors,
@@ -24,7 +24,7 @@ const services = [
       "Poda y limpieza técnica de palmeras.",
       "Poda de muros verdes, enredaderas y trepadoras.",
     ],
-    image: "https://images.unsplash.com/photo-1542273917363-3b1817f69a2d?w=900&q=80",
+    image: "/img/podaenaltura.png",
   },
   {
     icon: Wrench,
@@ -36,7 +36,7 @@ const services = [
       "Talas controladas y extracciones complejas.",
       "Destoconado (eliminación de restos de troncos) y uso de maquinaria especializada.",
     ],
-    image: "https://images.unsplash.com/photo-1473773508845-188df298d2d1?w=900&q=80",
+    image: "/img/ingenieria.png",
   },
 ];
 
