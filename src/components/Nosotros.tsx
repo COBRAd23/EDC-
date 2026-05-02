@@ -101,6 +101,14 @@ const Nosotros = () => {
                   </motion.div>
                 ))}
               </div>
+              <div className="mt-6 flex justify-center lg:justify-start">
+                <img
+                  src="/img/certificaciones.png"
+                  alt="Certificaciones ISA y AATAAC"
+                  className="h-auto w-full max-w-[380px] lg:max-w-[420px]"
+                  loading="lazy"
+                />
+              </div>
             </div>
           </motion.div>
         </div>
