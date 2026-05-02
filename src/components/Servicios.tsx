@@ -6,7 +6,7 @@ const services = [
     icon: Microscope,
     tag: "01 — Consultoría",
     title: "Diagnóstico y gestión de arbolado",
-    desc: "Evaluaciones de riesgo, inventarios, planes de manejo y dictámenes técnicos basados en metodología VTA y SIA.",
+    desc: "Evaluaciones de riesgo, inventarios, planes de manejo y dictámenes técnicos basados en la metodología VTA (Visual Tree Assessment) y SIA (Static Integrated Assessment).",
     bullets: [
       "Asesoramiento en gestión de arbolado urbano.",
       "Evaluación y mitigación de riesgos (árboles peligrosos).",
