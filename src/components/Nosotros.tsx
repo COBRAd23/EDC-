@@ -77,6 +77,9 @@ const Nosotros = () => {
                 Combinamos metodología internacional con sensibilidad local: cada poda, diagnóstico o sustentación
                 responde a un análisis biomecánico y fisiológico específico. No improvisamos. <span className="text-foreground">Operamos con criterio.</span>
               </p>
+              <p>
+                Dirección: Edgardo Corniola
+              </p>
             </div>
 
             {/* Certifications grid */}
