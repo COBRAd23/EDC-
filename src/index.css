@@ -63,7 +63,7 @@
     @apply bg-background text-foreground antialiased;
     font-family: 'Inter', system-ui, sans-serif;
     background-image:
-      linear-gradient(hsl(var(--background) / 0.85), hsl(var(--background) / 0.85)),
+      linear-gradient(hsl(var(--background) / 0.94), hsl(var(--background) / 0.94)),
       url("/img/logofondo.png");
     background-repeat: no-repeat;
     background-position: center top;
