@@ -34,11 +34,19 @@ const Hero = () => {
       }} />
 
       <motion.div style={{ opacity }} className="container relative">
+        <div className="pointer-events-none absolute right-0 top-1/2 hidden -translate-y-1/2 lg:block xl:right-8">
+          <img
+            src="/img/isologo_grande%20header.png"
+            alt="Isologo EDC Arborismo"
+            className="h-auto w-[400px] xl:w-[500px] opacity-90 drop-shadow-[0_0_40px_rgba(132,204,22,0.2)]"
+            loading="eager"
+          />
+        </div>
         <motion.div
           initial={{ opacity: 0, y: 24 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.7, ease: [0.22, 1, 0.36, 1] }}
-          className="max-w-4xl"
+          className="max-w-4xl xl:max-w-3xl"
         >
           <div className="inline-flex items-center gap-2 rounded-full border border-primary/30 bg-primary/5 px-4 py-1.5 mb-8 backdrop-blur-sm">
             <TreePine className="size-4 text-primary" />
