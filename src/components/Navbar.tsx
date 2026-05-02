@@ -1,7 +1,7 @@
 import { useState, useEffect } from "react";
 import { Link, useLocation } from "react-router-dom";
 import { Button } from "@/components/ui/button";
-import { TreePine, Menu, X } from "lucide-react";
+import { Menu, X } from "lucide-react";
 import { motion, AnimatePresence } from "framer-motion";
 
 const links = [
@@ -38,16 +38,13 @@ const Navbar = () => {
             scrolled ? "glass-strong shadow-elevated" : "bg-transparent"
           }`}
         >
-          <Link to="/" className="flex items-center gap-2.5 group">
-            <div className="relative">
-              <div className="absolute inset-0 bg-primary blur-lg opacity-40 group-hover:opacity-70 transition-opacity" />
-              <div className="relative size-9 rounded-lg bg-gradient-green flex items-center justify-center">
-                <TreePine className="size-5 text-primary-foreground" strokeWidth={2.5} />
-              </div>
-            </div>
-            <div className="font-display font-bold text-lg leading-none">
-              EDC <span className="text-primary">Arborismo</span>
-            </div>
+          <Link to="/" className="flex items-center group">
+            <img
+              src="/img/logo%20navbar%20y%20footer.png"
+              alt="EDC Arborismo"
+              className="h-8 w-auto md:h-9"
+              loading="eager"
+            />
           </Link>
 
           <div className="hidden md:flex items-center gap-8">

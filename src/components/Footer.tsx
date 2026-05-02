@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import { TreePine, Instagram, Mail, MessageCircle } from "lucide-react";
+import { Instagram, Mail, MessageCircle } from "lucide-react";
 
 const Footer = () => {
   return (
@@ -8,12 +8,12 @@ const Footer = () => {
         <div className="grid md:grid-cols-4 gap-12 mb-16">
           <div className="md:col-span-2">
             <div className="flex items-center gap-2.5 mb-5">
-              <div className="size-9 rounded-lg bg-gradient-green flex items-center justify-center">
-                <TreePine className="size-5 text-primary-foreground" strokeWidth={2.5} />
-              </div>
-              <div className="font-display font-bold text-lg">
-                EDC <span className="text-primary">Arborismo</span>
-              </div>
+              <img
+                src="/img/logo%20navbar%20y%20footer.png"
+                alt="EDC Arborismo"
+                className="h-9 w-auto"
+                loading="lazy"
+              />
             </div>
             <p className="text-sm text-muted-foreground max-w-md leading-relaxed">
               Arboricultura técnica y poda de altura con criterio científico.

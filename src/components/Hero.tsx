@@ -34,11 +34,11 @@ const Hero = () => {
       }} />
 
       <motion.div style={{ opacity }} className="container relative">
-        <div className="pointer-events-none absolute right-0 top-1/2 hidden -translate-y-1/2 lg:block xl:right-8">
+        <div className="pointer-events-none absolute bottom-0 right-0 hidden translate-y-[2px] lg:block xl:right-8">
           <img
             src="/img/isologo_grande%20header.png"
             alt="Isologo EDC Arborismo"
-            className="h-auto w-[400px] xl:w-[500px] opacity-90 drop-shadow-[0_0_40px_rgba(132,204,22,0.2)]"
+            className="h-auto w-[520px] xl:w-[620px] opacity-90 drop-shadow-[0_0_40px_rgba(132,204,22,0.2)]"
             loading="eager"
           />
         </div>
