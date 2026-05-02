@@ -1,4 +1,4 @@
-import { motion } from "framer-motion";
+import { motion, AnimatePresence } from "framer-motion";
 import { useState } from "react";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
@@ -9,17 +9,36 @@ import { toast } from "sonner";
 
 const Contacto = () => {
   const [loading, setLoading] = useState(false);
+  const [showModal, setShowModal] = useState(false);
 
-  const submit = (e: React.FormEvent<HTMLFormElement>) => {
+  const submit = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
     setLoading(true);
-    const data = new FormData(e.currentTarget);
-    const text = `Hola EDC, soy ${data.get("nombre")}.%0A${data.get("mensaje")}`;
-    setTimeout(() => {
-      window.open(`https://wa.me/5491150537615?text=${text}`, "_blank");
-      toast.success("Redirigiendo a WhatsApp...");
+    
+    const formData = new FormData(e.currentTarget);
+    const data = Object.fromEntries(formData.entries());
+
+    try {
+      const response = await fetch("https://formsubmit.co/ajax/corniolaedgar@gmail.com", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+          "Accept": "application/json"
+        },
+        body: JSON.stringify(data)
+      });
+
+      if (response.ok) {
+        setShowModal(true);
+        (e.target as HTMLFormElement).reset();
+      } else {
+        toast.error("Hubo un error al enviar el mensaje. Intentá de nuevo.");
+      }
+    } catch (error) {
+      toast.error("Error de conexión. Intentá de nuevo.");
+    } finally {
       setLoading(false);
-    }, 600);
+    }
   };
 
   return (
@@ -115,11 +134,40 @@ const Contacto = () => {
               {loading ? "Enviando..." : <>Enviar mensaje <Send className="size-4" /></>}
             </Button>
             <p className="text-xs text-muted-foreground text-center">
-              Te redirigiremos a WhatsApp para completar el envío.
+              Tu mensaje será enviado directamente a nuestra casilla de correo.
             </p>
           </motion.form>
         </div>
       </div>
+
+      {/* Success Modal */}
+      <AnimatePresence>
+        {showModal && (
+          <div className="fixed inset-0 z-[100] flex items-center justify-center p-4 bg-background/80 backdrop-blur-sm">
+            <motion.div
+              initial={{ opacity: 0, scale: 0.9, y: 20 }}
+              animate={{ opacity: 1, scale: 1, y: 0 }}
+              exit={{ opacity: 0, scale: 0.9, y: 20 }}
+              className="glass-strong rounded-3xl p-8 max-w-md w-full text-center shadow-elevated border border-primary/30"
+            >
+              <div className="size-16 rounded-full bg-primary/20 flex items-center justify-center text-primary mx-auto mb-6">
+                <Send className="size-8" />
+              </div>
+              <h3 className="font-display text-2xl font-bold mb-4">¡Mensaje Enviado!</h3>
+              <p className="text-muted-foreground leading-relaxed mb-8">
+                ¡Gracias por comunicarte con nosotros! Nos llegó tu consulta a la casilla de mail, en menos de 24hs estaremos respondiendo! Saludos!!
+              </p>
+              <Button 
+                variant="hero" 
+                className="w-full h-12" 
+                onClick={() => setShowModal(false)}
+              >
+                OK
+              </Button>
+            </motion.div>
+          </div>
+        )}
+      </AnimatePresence>
     </section>
   );
 };
