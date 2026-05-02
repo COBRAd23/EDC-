@@ -5,8 +5,23 @@ import Servicios from "@/components/Servicios";
 import Contacto from "@/components/Contacto";
 import Footer from "@/components/Footer";
 import { motion } from "framer-motion";
+import { ArrowUp } from "lucide-react";
+import { useEffect, useState } from "react";
 
 const Index = () => {
+  const [showScrollTop, setShowScrollTop] = useState(false);
+
+  useEffect(() => {
+    const onScroll = () => setShowScrollTop(window.scrollY > 400);
+    onScroll();
+    window.addEventListener("scroll", onScroll);
+    return () => window.removeEventListener("scroll", onScroll);
+  }, []);
+
+  const scrollToTop = () => {
+    window.scrollTo({ top: 0, behavior: "smooth" });
+  };
+
   return (
     <motion.div
       initial={{ opacity: 0 }}
@@ -48,6 +63,15 @@ const Index = () => {
         </section>
       </main>
       <Footer />
+      <button
+        onClick={scrollToTop}
+        aria-label="Volver arriba"
+        className={`fixed bottom-6 right-6 z-50 size-12 rounded-full border border-border bg-card/90 text-primary shadow-glow transition-all duration-300 hover:scale-105 hover:bg-primary hover:text-primary-foreground ${
+          showScrollTop ? "translate-y-0 opacity-100" : "pointer-events-none translate-y-4 opacity-0"
+        }`}
+      >
+        <ArrowUp className="mx-auto size-5" />
+      </button>
     </motion.div>
   );
 };
