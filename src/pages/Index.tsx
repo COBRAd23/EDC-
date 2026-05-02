@@ -7,9 +7,11 @@ import Footer from "@/components/Footer";
 import { motion } from "framer-motion";
 import { ArrowUp } from "lucide-react";
 import { useEffect, useState } from "react";
+import { useLocation } from "react-router-dom";
 
 const Index = () => {
   const [showScrollTop, setShowScrollTop] = useState(false);
+  const { hash } = useLocation();
 
   useEffect(() => {
     const onScroll = () => setShowScrollTop(window.scrollY > 400);
@@ -19,16 +21,13 @@ const Index = () => {
   }, []);
 
   useEffect(() => {
-    const hash = window.location.hash;
     if (hash) {
-      setTimeout(() => {
-        const element = document.querySelector(hash);
-        if (element) {
-          element.scrollIntoView({ behavior: "smooth" });
-        }
-      }, 100);
+      const element = document.querySelector(hash);
+      if (element) {
+        element.scrollIntoView({ behavior: "smooth" });
+      }
     }
-  }, []);
+  }, [hash]);
 
   const scrollToTop = () => {
     window.scrollTo({ top: 0, behavior: "smooth" });
