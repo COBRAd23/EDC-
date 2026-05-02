@@ -25,7 +25,7 @@ const projects: Project[] = [
     date: "Marzo 2024",
     service: "Poda de altura — SRT",
     description: "Intervención en ejemplar adulto de Quercus robur con poda de elevación de copa y reducción selectiva de ramas estructurales. Trabajo realizado con técnica SRT y rigging de seguridad.",
-    image: "https://images.unsplash.com/photo-1542273917363-3b1817f69a2d?w=1200&q=80",
+    image: "/img/portfolio/Casco.webp",
     span: "md:col-span-2 md:row-span-2",
   },
   {
@@ -35,7 +35,7 @@ const projects: Project[] = [
     date: "Febrero 2024",
     service: "Limpieza Palmeras",
     description: "Saneamiento completo de Phoenix canariensis: extracción de pencas secas, limpieza de inflorescencias y tratamiento preventivo contra picudo rojo.",
-    image: "https://images.unsplash.com/photo-1473773508845-188df298d2d1?w=1200&q=80",
+    image: "/img/portfolio/palmera.webp",
     span: "",
   },
   {
@@ -45,7 +45,7 @@ const projects: Project[] = [
     date: "Enero 2024",
     service: "Ingeniería arbórea",
     description: "Instalación de cableado dinámico Cobra en Tipuana tipu de gran porte para reforzar codominancia estructural sin restringir el movimiento natural del árbol.",
-    image: "https://images.unsplash.com/photo-1502082553048-f009c37129b9?w=1200&q=80",
+    image: "/img/portfolio/Cobra System.webp",
     span: "",
   },
   {
@@ -55,7 +55,7 @@ const projects: Project[] = [
     date: "Diciembre 2023",
     service: "Extracción compleja",
     description: "Tala seccionada de eucaliptus de 22m en espacio reducido junto a piscina y construcciones. Operativo con rigging dinámico y descenso controlado de fustes.",
-    image: "https://images.unsplash.com/photo-1574263867128-b3a82a7d39e0?w=1200&q=80",
+    image: "/img/portfolio/jardín privado.webp",
     span: "md:col-span-2",
   },
   {
@@ -65,7 +65,7 @@ const projects: Project[] = [
     date: "Noviembre 2023",
     service: "Consultoría VTA",
     description: "Evaluación visual de riesgo (VTA) sobre 47 ejemplares en avenida principal. Inventario digital, dictamen técnico y plan de manejo a 5 años.",
-    image: "https://images.unsplash.com/photo-1448375240586-882707db888b?w=1200&q=80",
+    image: "/img/portfolio/arbolado urbano.webp",
     span: "",
   },
   {
@@ -75,7 +75,7 @@ const projects: Project[] = [
     date: "Octubre 2023",
     service: "Emergencia 24h",
     description: "Intervención de emergencia tras temporal: retiro de ramas peligrosas, reducción de copa y evaluación estructural de plátano centenario.",
-    image: "https://images.unsplash.com/photo-1444930694458-01babe71870e?w=1200&q=80",
+    image: "/img/portfolio/post-tormenta.webp",
     span: "",
   },
   {
@@ -85,7 +85,7 @@ const projects: Project[] = [
     date: "2023 — 2024",
     service: "Plan anual",
     description: "Contrato anual de gestión arbórea: monitoreo, podas programadas, fitosanidad y plantación de reposición en 12 hectáreas.",
-    image: "https://images.unsplash.com/photo-1441974231531-c6227db76b6e?w=1200&q=80",
+    image: "/img/portfolio/Country La Reserva.webp",
     span: "md:col-span-2",
   },
 ];
