@@ -24,11 +24,11 @@ const Footer = () => {
           <div>
             <div className="text-xs uppercase tracking-widest text-primary mb-4">Navegación</div>
             <ul className="space-y-2.5 text-sm">
-              <li><a href="/#home" className="text-muted-foreground hover:text-primary transition-colors">Home</a></li>
-              <li><a href="/#nosotros" className="text-muted-foreground hover:text-primary transition-colors">Nosotros</a></li>
-              <li><a href="/#servicios" className="text-muted-foreground hover:text-primary transition-colors">Servicios</a></li>
+              <li><Link to="/#home" className="text-muted-foreground hover:text-primary transition-colors">Home</Link></li>
+              <li><Link to="/#nosotros" className="text-muted-foreground hover:text-primary transition-colors">Nosotros</Link></li>
+              <li><Link to="/#servicios" className="text-muted-foreground hover:text-primary transition-colors">Servicios</Link></li>
               <li><Link to="/portfolio" className="text-muted-foreground hover:text-primary transition-colors">Portfolio</Link></li>
-              <li><a href="/#contacto" className="text-muted-foreground hover:text-primary transition-colors">Contacto</a></li>
+              <li><Link to="/#contacto" className="text-muted-foreground hover:text-primary transition-colors">Contacto</Link></li>
             </ul>
           </div>
 

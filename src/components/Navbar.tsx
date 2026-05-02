@@ -49,13 +49,13 @@ const Navbar = () => {
 
           <div className="hidden md:flex items-center gap-8">
             {links.map((l) => (
-              <a
+              <Link
                 key={l.href}
-                href={l.href}
+                to={l.href}
                 className="relative text-sm text-muted-foreground hover:text-foreground transition-colors after:content-[''] after:absolute after:left-0 after:-bottom-1 after:h-px after:w-0 after:bg-primary after:transition-all hover:after:w-full"
               >
                 {l.label}
-              </a>
+              </Link>
             ))}
           </div>
 
@@ -83,14 +83,14 @@ const Navbar = () => {
               className="md:hidden mt-2 glass-strong rounded-2xl p-5 flex flex-col gap-4"
             >
               {links.map((l) => (
-                <a
+                <Link
                   key={l.href}
-                  href={l.href}
+                  to={l.href}
                   onClick={() => setOpen(false)}
                   className="text-sm text-muted-foreground hover:text-primary"
                 >
                   {l.label}
-                </a>
+                </Link>
               ))}
               <Button variant="hero" size="sm" asChild>
                 <Link to="/portfolio" onClick={() => setOpen(false)}>Portfolio</Link>
