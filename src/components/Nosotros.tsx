@@ -109,6 +109,15 @@ const Nosotros = () => {
                   loading="lazy"
                 />
               </div>
+              <div className="mt-6 rounded-2xl border border-border bg-card/50 px-6 py-5">
+                <p className="text-lg font-display font-semibold text-primary">
+                  Formación Continua:
+                </p>
+                <p className="mt-2 text-sm text-muted-foreground leading-relaxed">
+                  Capacitación constante en técnicas de rescate, primeros auxilios y nuevas metodologías en
+                  Argentina y el exterior.
+                </p>
+              </div>
             </div>
           </motion.div>
         </div>
