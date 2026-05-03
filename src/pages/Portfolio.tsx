@@ -5,6 +5,13 @@ import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import { Button } from "@/components/ui/button";
 import { ArrowLeft, X, MapPin, Calendar, Wrench } from "lucide-react";
+import {
+  Carousel,
+  CarouselContent,
+  CarouselItem,
+  CarouselNext,
+  CarouselPrevious,
+} from "@/components/ui/carousel";
 
 type Project = {
   id: number;
@@ -15,6 +22,7 @@ type Project = {
   description: string;
   image: string;
   span: string;
+  images?: string[];
 };
 
 const projects: Project[] = [
@@ -27,6 +35,10 @@ const projects: Project[] = [
     description: "Intervención en ejemplar adulto de Quercus robur con poda de elevación de copa y reducción selectiva de ramas estructurales. Trabajo realizado con técnica SRT y rigging de seguridad.",
     image: "/img/portfolio/Casco.webp",
     span: "md:col-span-2 md:row-span-2",
+    images: [
+      "/img/portfolio/carrusel 02 Casco/carcas01.webp",
+      "/img/portfolio/carrusel 02 Casco/carca02.webp"
+    ]
   },
   {
     id: 2,
@@ -37,6 +49,11 @@ const projects: Project[] = [
     description: "Saneamiento completo de Phoenix canariensis: extracción de pencas secas, limpieza de inflorescencias y tratamiento preventivo contra picudo rojo.",
     image: "/img/portfolio/palmera.webp",
     span: "",
+    images: [
+      "/img/portfolio/carrusel 06 palmera/palmera.webp",
+      "/img/portfolio/carrusel 06 palmera/palmera - copia.webp",
+      "/img/portfolio/carrusel 06 palmera/palmera - copia (2).webp"
+    ]
   },
   {
     id: 3,
@@ -47,6 +64,11 @@ const projects: Project[] = [
     description: "Instalación de cableado dinámico Cobra en Tipuana tipu de gran porte para reforzar codominancia estructural sin restringir el movimiento natural del árbol.",
     image: "/img/portfolio/Cobra System.webp",
     span: "",
+    images: [
+      "/img/portfolio/carrusel 03 Cobra System/Cobra System.webp",
+      "/img/portfolio/carrusel 03 Cobra System/Cobra System - copia.webp",
+      "/img/portfolio/carrusel 03 Cobra System/Cobra System - copia (2).webp"
+    ]
   },
   {
     id: 4,
@@ -57,6 +79,11 @@ const projects: Project[] = [
     description: "Tala seccionada de eucaliptus de 22m en espacio reducido junto a piscina y construcciones. Operativo con rigging dinámico y descenso controlado de fustes.",
     image: "/img/portfolio/jardín privado.webp",
     span: "md:col-span-2",
+    images: [
+      "/img/portfolio/carrusel 05 jardín privado/jardín privado.webp",
+      "/img/portfolio/carrusel 05 jardín privado/jardín privado - copia.webp",
+      "/img/portfolio/carrusel 05 jardín privado/jardín privado - copia (2).webp"
+    ]
   },
   {
     id: 5,
@@ -67,6 +94,13 @@ const projects: Project[] = [
     description: "Evaluación visual de riesgo (VTA) sobre 47 ejemplares en avenida principal. Inventario digital, dictamen técnico y plan de manejo a 5 años.",
     image: "/img/portfolio/arbolado urbano.webp",
     span: "",
+    images: [
+      "/img/portfolio/carrusel 01 arbolado urbano/carurb01.webp",
+      "/img/portfolio/carrusel 01 arbolado urbano/carurb02.webp",
+      "/img/portfolio/carrusel 01 arbolado urbano/carurb03.webp",
+      "/img/portfolio/carrusel 01 arbolado urbano/carurb04.webp",
+      "/img/portfolio/carrusel 01 arbolado urbano/carurb05.webp"
+    ]
   },
   {
     id: 6,
@@ -77,6 +111,11 @@ const projects: Project[] = [
     description: "Intervención de emergencia tras temporal: retiro de ramas peligrosas, reducción de copa y evaluación estructural de plátano centenario.",
     image: "/img/portfolio/post-tormenta.webp",
     span: "",
+    images: [
+      "/img/portfolio/carrusel 07 post-tormenta/post-tormenta.webp",
+      "/img/portfolio/carrusel 07 post-tormenta/post-tormenta - copia.webp",
+      "/img/portfolio/carrusel 07 post-tormenta/post-tormenta - copia (2).webp"
+    ]
   },
   {
     id: 7,
@@ -87,6 +126,11 @@ const projects: Project[] = [
     description: "Contrato anual de gestión arbórea: monitoreo, podas programadas, fitosanidad y plantación de reposición en 12 hectáreas.",
     image: "/img/portfolio/Country La Reserva.webp",
     span: "md:col-span-2",
+    images: [
+      "/img/portfolio/carrusel 04 Country La Reserva/Country La Reserva.webp",
+      "/img/portfolio/carrusel 04 Country La Reserva/Country La Reserva - copia.webp",
+      "/img/portfolio/carrusel 04 Country La Reserva/Country La Reserva - copia (2).webp"
+    ]
   },
 ];
 
@@ -184,13 +228,33 @@ const Portfolio = () => {
             >
               <button
                 onClick={() => setSelected(null)}
-                className="absolute top-4 right-4 z-10 size-10 rounded-full glass-strong flex items-center justify-center hover:bg-primary hover:text-primary-foreground transition-colors"
+                className="absolute top-4 right-4 z-[110] size-10 rounded-full glass-strong flex items-center justify-center hover:bg-primary hover:text-primary-foreground transition-colors"
               >
                 <X className="size-4" />
               </button>
-              <div className="aspect-[16/9] overflow-hidden">
-                <img src={selected.image} alt={selected.title} className="w-full h-full object-cover" />
+              
+              <div className="aspect-[16/9] overflow-hidden bg-muted relative group/carousel">
+                {selected.images && selected.images.length > 0 ? (
+                  <Carousel className="w-full h-full">
+                    <CarouselContent className="h-full ml-0">
+                      {selected.images.map((img, idx) => (
+                        <CarouselItem key={idx} className="pl-0 h-full">
+                          <img 
+                            src={img} 
+                            alt={`${selected.title} - ${idx + 1}`} 
+                            className="w-full h-full object-cover"
+                          />
+                        </CarouselItem>
+                      ))}
+                    </CarouselContent>
+                    <CarouselPrevious className="left-4 opacity-0 group-hover/carousel:opacity-100 transition-opacity" />
+                    <CarouselNext className="right-4 opacity-0 group-hover/carousel:opacity-100 transition-opacity" />
+                  </Carousel>
+                ) : (
+                  <img src={selected.image} alt={selected.title} className="w-full h-full object-cover" />
+                )}
               </div>
+
               <div className="p-8 md:p-10">
                 <div className="text-xs uppercase tracking-widest text-primary mb-3">{selected.service}</div>
                 <h3 className="font-display text-3xl md:text-4xl font-bold mb-5 leading-tight">{selected.title}</h3>
