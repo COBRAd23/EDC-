@@ -38,7 +38,9 @@ const Nosotros = () => {
               <div className="absolute inset-0 bg-gradient-to-t from-background via-background/20 to-transparent" />
               <div className="absolute bottom-6 left-6 right-6">
                 <div className="text-xs uppercase tracking-widest text-primary mb-2">Trabajo en altura</div>
-                <div className="font-display text-2xl font-semibold">Técnica + Pasión</div>
+                <div className="font-display text-2xl font-semibold leading-tight">
+                  Técnica <br className="md:hidden" /> + Pasión
+                </div>
               </div>
             </div>
 
