@@ -23,6 +23,18 @@ const Navbar = () => {
     return () => window.removeEventListener("scroll", onScroll);
   }, []);
 
+  const handleClick = (e: React.MouseEvent<HTMLAnchorElement>, href: string) => {
+    if (pathname === "/" && href.startsWith("/#")) {
+      e.preventDefault();
+      const id = href.replace("/#", "");
+      const element = document.getElementById(id);
+      if (element) {
+        element.scrollIntoView({ behavior: "smooth" });
+      }
+      setOpen(false);
+    }
+  };
+
   return (
     <motion.header
       initial={{ y: -80, opacity: 0 }}
@@ -52,6 +64,7 @@ const Navbar = () => {
               <Link
                 key={l.href}
                 to={l.href}
+                onClick={(e) => handleClick(e, l.href)}
                 className="relative text-sm text-muted-foreground hover:text-foreground transition-colors after:content-[''] after:absolute after:left-0 after:-bottom-1 after:h-px after:w-0 after:bg-primary after:transition-all hover:after:w-full"
               >
                 {l.label}
@@ -86,7 +99,10 @@ const Navbar = () => {
                 <Link
                   key={l.href}
                   to={l.href}
-                  onClick={() => setOpen(false)}
+                  onClick={(e) => {
+                    handleClick(e, l.href);
+                    setOpen(false);
+                  }}
                   className="text-sm text-muted-foreground hover:text-primary"
                 >
                   {l.label}

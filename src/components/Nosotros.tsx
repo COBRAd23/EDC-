@@ -48,10 +48,10 @@ const Nosotros = () => {
               whileInView={{ opacity: 1, scale: 1 }}
               viewport={{ once: true }}
               transition={{ delay: 0.3, duration: 0.6 }}
-              className="absolute -bottom-6 -right-6 glass-strong rounded-2xl p-5 max-w-[200px] shadow-glow"
+              className="absolute -bottom-4 -right-4 md:-bottom-6 md:-right-6 glass-strong rounded-2xl p-3.5 md:p-5 max-w-[140px] md:max-w-[200px] shadow-glow"
             >
-              <div className="text-3xl font-display font-bold text-primary">15+</div>
-              <div className="text-xs text-muted-foreground mt-1">años protegiendo el patrimonio arbóreo</div>
+              <div className="text-2xl md:text-3xl font-display font-bold text-primary">15+</div>
+              <div className="text-[10px] md:text-xs text-muted-foreground mt-1 leading-tight">años protegiendo el patrimonio arbóreo</div>
             </motion.div>
           </motion.div>
 

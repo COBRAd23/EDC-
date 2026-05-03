@@ -1,7 +1,19 @@
-import { Link } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 import { Instagram, Mail, MessageCircle } from "lucide-react";
 
 const Footer = () => {
+  const { pathname } = useLocation();
+
+  const handleClick = (e: React.MouseEvent<HTMLAnchorElement>, href: string) => {
+    if (pathname === "/" && href.startsWith("/#")) {
+      e.preventDefault();
+      const id = href.replace("/#", "");
+      const element = document.getElementById(id);
+      if (element) {
+        element.scrollIntoView({ behavior: "smooth" });
+      }
+    }
+  };
   return (
     <footer className="relative border-t border-border pt-20 pb-10">
       <div className="container">
@@ -24,11 +36,11 @@ const Footer = () => {
           <div>
             <div className="text-xs uppercase tracking-widest text-primary mb-4">Navegación</div>
             <ul className="space-y-2.5 text-sm">
-              <li><Link to="/#home" className="text-muted-foreground hover:text-primary transition-colors">Home</Link></li>
-              <li><Link to="/#nosotros" className="text-muted-foreground hover:text-primary transition-colors">Nosotros</Link></li>
-              <li><Link to="/#servicios" className="text-muted-foreground hover:text-primary transition-colors">Servicios</Link></li>
+              <li><Link to="/#home" onClick={(e) => handleClick(e, "/#home")} className="text-muted-foreground hover:text-primary transition-colors">Home</Link></li>
+              <li><Link to="/#nosotros" onClick={(e) => handleClick(e, "/#nosotros")} className="text-muted-foreground hover:text-primary transition-colors">Nosotros</Link></li>
+              <li><Link to="/#servicios" onClick={(e) => handleClick(e, "/#servicios")} className="text-muted-foreground hover:text-primary transition-colors">Servicios</Link></li>
               <li><Link to="/portfolio" className="text-muted-foreground hover:text-primary transition-colors">Portfolio</Link></li>
-              <li><Link to="/#contacto" className="text-muted-foreground hover:text-primary transition-colors">Contacto</Link></li>
+              <li><Link to="/#contacto" onClick={(e) => handleClick(e, "/#contacto")} className="text-muted-foreground hover:text-primary transition-colors">Contacto</Link></li>
             </ul>
           </div>
 
