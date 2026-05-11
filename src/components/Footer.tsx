@@ -53,8 +53,8 @@ const Footer = () => {
                 </a>
               </li>
               <li>
-                <a href="mailto:corniolaedgar@gmail.com" className="flex items-center gap-2 text-muted-foreground hover:text-primary transition-colors">
-                  <Mail className="size-4" /> corniolaedgar@gmail.com
+                <a href="mailto:edcarborismo@gmail.com" className="flex items-center gap-2 text-muted-foreground hover:text-primary transition-colors">
+                  <Mail className="size-4" /> edcarborismo@gmail.com
                 </a>
               </li>
               <li>
@@ -75,7 +75,7 @@ const Footer = () => {
           <div>© {new Date().getFullYear()} EDC Arborismo. Todos los derechos reservados.</div>
           <div className="flex items-center gap-2">
             <span className="size-2 rounded-full bg-primary animate-pulse" />
-            Operativo en CABA & GBA
+            Operativo en CABA & GBA 
           </div>
         </div>
       </div>
