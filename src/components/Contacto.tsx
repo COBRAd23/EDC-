@@ -19,7 +19,7 @@ const Contacto = () => {
     const data = Object.fromEntries(formData.entries());
 
     try {
-      const response = await fetch("https://formsubmit.co/ajax/cobradesign@outlook.com.com", {
+      const response = await fetch("https://formsubmit.co/ajax/cobradesign@outlook.com", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
