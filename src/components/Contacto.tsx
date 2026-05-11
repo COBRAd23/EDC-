@@ -88,7 +88,7 @@ const Contacto = () => {
                 </div>
                 <div>
                   <div className="text-xs uppercase tracking-wider text-muted-foreground">Email</div>
-                  <div className="font-display font-semibold">corniolaedgar@gmail.com</div>
+                  <div className="font-display font-semibold">edcarborismo@gmail.com</div>
                 </div>
               </a>
 
