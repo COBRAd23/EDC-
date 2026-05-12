@@ -103,7 +103,7 @@ const Hero = () => {
             <img
               src="/img/isologo_grande%20header.png"
               alt="Isologo EDC Arborismo"
-              className="w-full max-w-[260px] lg:max-w-[300px] xl:max-w-[500px] 2xl:max-w-[620px] h-auto opacity-90 drop-shadow-[0_0_40px_rgba(132,204,22,0.2)]"
+              className="w-full max-w-[200px] lg:max-w-[220px] xl:max-w-[500px] 2xl:max-w-[620px] h-auto opacity-90 drop-shadow-[0_0_40px_rgba(132,204,22,0.2)]"
               loading="eager"
             />
           </motion.div>
