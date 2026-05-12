@@ -98,12 +98,12 @@ const Hero = () => {
             initial={{ opacity: 0, x: 40 }}
             animate={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.9, ease: [0.22, 1, 0.36, 1], delay: 0.2 }}
-            className="hidden lg:flex items-end justify-center self-end"
+            className="hidden lg:flex items-center justify-center"
           >
             <img
               src="/img/isologo_grande%20header.png"
               alt="Isologo EDC Arborismo"
-              className="w-full max-w-[340px] lg:max-w-[380px] xl:max-w-[500px] 2xl:max-w-[620px] h-auto opacity-90 drop-shadow-[0_0_40px_rgba(132,204,22,0.2)] translate-y-[1px]"
+              className="w-full max-w-[260px] lg:max-w-[300px] xl:max-w-[500px] 2xl:max-w-[620px] h-auto opacity-90 drop-shadow-[0_0_40px_rgba(132,204,22,0.2)]"
               loading="eager"
             />
           </motion.div>
