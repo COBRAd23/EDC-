@@ -158,7 +158,7 @@ const Portfolio = () => {
               <ArrowLeft className="size-4" /> Volver al inicio
             </Link>
             <div className="text-xs uppercase tracking-widest text-primary mb-4">Portfolio</div>
-            <h1 className="font-display text-5xl md:text-7xl font-bold leading-[1.05] mb-6 max-w-4xl">
+            <h1 className="font-display text-3xl sm:text-4xl md:text-7xl font-bold leading-[1.05] mb-6 max-w-4xl">
               Trabajos realizados con <span className="text-gradient-green">precisión</span>.
             </h1>
             <p className="text-lg text-muted-foreground max-w-2xl">
