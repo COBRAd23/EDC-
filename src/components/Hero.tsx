@@ -98,7 +98,7 @@ const Hero = () => {
             initial={{ opacity: 0, x: 40 }}
             animate={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.9, ease: [0.22, 1, 0.36, 1], delay: 0.2 }}
-            className="hidden lg:flex items-center justify-center"
+            className="hidden lg:flex items-end justify-center self-end"
           >
             <img
               src="/img/isologo_grande%20header.png"
