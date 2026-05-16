@@ -3,9 +3,9 @@ import { Award, BookOpen, ShieldCheck } from "lucide-react";
 import nosotrosArborista from "@/assets/nosotros-arborista.jpg";
 
 const certs = [
-  { name: "ISA", full: "International Society of Arboriculture", icon: Award },
-  { name: "AATAAC", full: "Asociación Argentina de Arboricultura", icon: BookOpen },
-  { name: "ANSI Z133", full: "Norma de Seguridad Operativa", icon: ShieldCheck },
+  { name: "ISA ML0486AT", full: "International Society of Arboriculture", icon: Award },
+  { name: "AATAAC N-15", full: "Asociación Argentina de Arboricultura", icon: BookOpen },
+  { name: "ANSI Z133/A300", full: "Norma de Seguridad Operativa", icon: ShieldCheck },
 ];
 
 const fadeUp = {

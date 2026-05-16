@@ -29,7 +29,7 @@ const Footer = () => {
             </div>
             <p className="text-sm text-muted-foreground max-w-md leading-relaxed">
               Arboricultura técnica y poda de altura con criterio científico.
-              Preservando el patrimonio arbóreo bajo estándares internacionales ISA y ANSI Z133.
+              Preservando el patrimonio arbóreo bajo estándares internacionales ISA y ANSI Z133/A300.
             </p>
           </div>
 
@@ -75,7 +75,7 @@ const Footer = () => {
           <div>© {new Date().getFullYear()} EDC Arborismo. Todos los derechos reservados.</div>
           <div className="flex items-center gap-2">
             <span className="size-2 rounded-full bg-primary animate-pulse" />
-            Operativo en CABA & GBA - Interior del Pais - Paises Vecino - Resto del Mundo.  
+            Operativo en CABA & GBA - Interior del Pais - Paises Vecinos - Resto del Mundo.  
           </div>
         </div>
       </div>
