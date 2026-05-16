@@ -116,7 +116,7 @@ const Nosotros = () => {
                   Formación Continua:
                 </p>
                 <p className="mt-2 text-sm text-muted-foreground leading-relaxed">
-                  Capacitación constante en técnicas de rescate, primeros auxilios con CRUZ ROJA y nuevas metodologías en
+                  Capacitación constante en técnicas de rescate, primeros auxilios con <strong>CRUZ ROJA</strong> y nuevas metodologías en
                   Argentina y el exterior.
                 </p>
               </div>
