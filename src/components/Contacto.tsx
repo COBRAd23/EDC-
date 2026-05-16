@@ -98,7 +98,7 @@ const Contacto = () => {
                 </div>
                 <div>
                   <div className="text-xs uppercase tracking-wider text-muted-foreground">Zona de trabajo</div>
-                  <div className="font-display font-semibold">CABA · GBA · Provincia BA</div>
+                  <div className="font-display font-semibold">CABA · GBA · Provincia BA · Interior del Pais · Paises Vecinos · Resto del Mundo.</div>
                 </div>
               </div>
             </div>
