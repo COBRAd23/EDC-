@@ -56,7 +56,7 @@ const Servicios = () => {
             Tres áreas, <span className="text-gradient-green">un solo estándar:</span> excelencia técnica.
           </h2>
           <p className="text-muted-foreground text-lg">
-            Soluciones integrales para municipios, paisajistas, countries y propietarios particulares.
+            Poda Profisional - Soluciones integrales para municipios, paisajistas, countries y propietarios particulares. Rescate de Drones. EMERGENCIA 24HS.
           </p>
         </motion.div>
 

@@ -59,7 +59,7 @@ const Hero = () => {
             </h1>
 
             <p className="text-sm lg:text-base xl:text-lg text-muted-foreground max-w-xl mb-5 lg:mb-6 leading-relaxed">
-              Gestión avanzada basada en criterios científicos y estándares internacionales.
+              Gestión integral en manejo de arbolado urbano y rural, basada en normas y estándares internacionales.
               Precisión, seguridad y respeto por la longevidad del entorno.
             </p>
 
@@ -78,7 +78,7 @@ const Hero = () => {
               {[
                 { n: "+15", l: "Años de experiencia" },
                 { n: "500+", l: "Intervenciones" },
-                { n: "100%", l: "Norma ANSI Z133" },
+                { n: "100%", l: "Norma ANSI Z133/A300" },
               ].map((s, i) => (
                 <motion.div
                   key={s.l}

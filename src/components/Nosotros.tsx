@@ -71,9 +71,9 @@ const Nosotros = () => {
             </h2>
             <div className="space-y-4 text-muted-foreground leading-relaxed">
               <p>
-                En EDC Arborismo entendemos que cada árbol es un organismo vivo único, con una historia y un rol
-                ecológico irremplazable. Nuestro trabajo se enfoca en preservar y prolongar la longevidad del
-                entorno mediante intervenciones técnicas, seguras y minimamente invasivas.
+                En EDC Arborismo entendemos que cada árbol es un ser vivo único, con una historia y un rol
+                ecosistemico. Nuestro labor se enfoca en preservar su vida y el entorno,
+                aplicando técnicas seguras y precisas, basadas en analisis biomecanicos y fisiológicos.
               </p>
               <p>
                 Combinamos metodología internacional con sensibilidad local: cada poda, diagnóstico o sustentación
@@ -116,7 +116,7 @@ const Nosotros = () => {
                   Formación Continua:
                 </p>
                 <p className="mt-2 text-sm text-muted-foreground leading-relaxed">
-                  Capacitación constante en técnicas de rescate, primeros auxilios y nuevas metodologías en
+                  Capacitación constante en técnicas de rescate, primeros auxilios con CRUZ ROJA y nuevas metodologías en
                   Argentina y el exterior.
                 </p>
               </div>
