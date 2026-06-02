@@ -67,7 +67,7 @@ const Nosotros = () => {
             <div className="text-xs uppercase tracking-widest text-primary mb-4">Nosotros</div>
             <h2 className="font-display text-4xl md:text-5xl font-bold leading-tight mb-6">
               Pasión por la naturaleza,<br />
-              <span className="text-gradient-green">precisión científica.</span>
+              <span className="text-gradient-green">precisión al detalle.</span>
             </h2>
             <div className="space-y-4 text-muted-foreground leading-relaxed">
               <p>
