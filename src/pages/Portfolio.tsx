@@ -236,7 +236,7 @@ const Portfolio = () => {
                 <X className="size-4" />
               </button>
               
-              <div className="aspect-[16/9] overflow-hidden bg-muted relative group/carousel">
+              <div className="w-full overflow-hidden bg-muted relative group/carousel">
                 {selected.images && selected.images.length > 0 ? (
                   <Carousel className="w-full h-full">
                     <CarouselContent className="h-full ml-0">
@@ -245,7 +245,7 @@ const Portfolio = () => {
                           <img 
                             src={img} 
                             alt={`${selected.title} - ${idx + 1}`} 
-                            className="w-full h-full object-cover"
+                            className="w-full h-auto object-contain max-h-[70vh]"
                           />
                         </CarouselItem>
                       ))}
@@ -254,7 +254,7 @@ const Portfolio = () => {
                     <CarouselNext className="right-4 opacity-0 group-hover/carousel:opacity-100 transition-opacity" />
                   </Carousel>
                 ) : (
-                  <img src={selected.image} alt={selected.title} className="w-full h-full object-cover" />
+                  <img src={selected.image} alt={selected.title} className="w-full h-auto object-contain max-h-[70vh]" />
                 )}
               </div>
 
