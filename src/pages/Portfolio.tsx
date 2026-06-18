@@ -50,9 +50,12 @@ const projects: Project[] = [
     image: "/img/portfolio/palmera.webp",
     span: "",
     images: [
-      "/img/portfolio/carrusel 06 palmera/palmera.webp",
-      "/img/portfolio/carrusel 06 palmera/palmera - copia.webp",
-      "/img/portfolio/carrusel 06 palmera/palmera - copia (2).webp"
+      "/img/portfolio/carrusel 06 palmera/palmera01.webp",
+      "/img/portfolio/carrusel 06 palmera/palmera02.webp",
+      "/img/portfolio/carrusel 06 palmera/palmera03.webp",
+      "/img/portfolio/carrusel 06 palmera/palmera04.webp",
+      "/img/portfolio/carrusel 06 palmera/palmera05.webp",
+      "/img/portfolio/carrusel 06 palmera/palmera06.webp",
     ]
   },
   {
