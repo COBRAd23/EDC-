@@ -43,10 +43,10 @@ const projects: Project[] = [
   {
     id: 2,
     title: "Limpieza técnica de palmera Phoenix",
-    location: "San Isidro",
+    location: "Argentina, zona norte",
     date: "Febrero 2024",
     service: "Limpieza Palmeras",
-    description: "Saneamiento completo de Phoenix canariensis: extracción de pencas secas, limpieza de inflorescencias y tratamiento preventivo contra picudo rojo.",
+    description: "El Antes y Despues, Saneamiento completo de Phoenixs canariensis: limpieza de racimos de frutos, inflorecencias, hojas secas y balona.",
     image: "/img/portfolio/palmera.webp",
     span: "",
     images: [
