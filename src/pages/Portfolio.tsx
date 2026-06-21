@@ -29,15 +29,19 @@ const projects: Project[] = [
   {
     id: 1,
     title: "Poda formativa en Altos del Casco",
-    location: "Pilar, Buenos Aires",
+    location: "Zárate, Buenos Aires",
     date: "Marzo 2024",
-    service: "Poda de altura — SRT",
-    description: "Intervención en ejemplar adulto de Quercus robur con poda de elevación de copa y reducción selectiva de ramas estructurales. Trabajo realizado con técnica SRT y rigging de seguridad.",
+    service: "Poda Formativa y Muros Verdes",
+    description: "A diferencia de otros tipos de poda, su propósito principal no es la producción inmediata de frutos o la limpieza de ramas muertas, sino la arquitectura del ejemplar a largo plazo.",
     image: "/img/portfolio/Casco.webp",
     span: "md:col-span-2 md:row-span-2",
     images: [
       "/img/portfolio/carrusel 02 Casco/carcas01.webp",
-      "/img/portfolio/carrusel 02 Casco/carca02.webp"
+      "/img/portfolio/carrusel 02 Casco/carcas02.webp",
+      "/img/portfolio/carrusel 02 Casco/carcas03.webp",
+      "/img/portfolio/carrusel 02 Casco/carcas04.webp",
+      "/img/portfolio/carrusel 02 Casco/carcas05.webp",
+      "/img/portfolio/carrusel 02 Casco/carcas06.webp",
     ]
   },
   {
