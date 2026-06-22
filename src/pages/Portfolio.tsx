@@ -83,17 +83,18 @@ const projects: Project[] = [
   },
   {
     id: 4,
-    title: "Desmonte controlado en jardín privado",
+    title: "CHIPEADO DE RAMAS",
     location: "Nordelta",
     date: "Diciembre 2023",
-    service: "Extracción compleja",
+    service: "Chipeado de Ramas desechables del trabajo de poda realizado",
     description: "Tala seccionada de eucaliptus de 22m en espacio reducido junto a piscina y construcciones. Operativo con rigging dinámico y descenso controlado de fustes.",
-    image: "/img/portfolio/jardín privado.webp",
+    image: "/img/portfolio/chipeado.webp",
     span: "md:col-span-2",
     images: [
-      "/img/portfolio/carrusel 05 jardín privado/jardín privado.webp",
-      "/img/portfolio/carrusel 05 jardín privado/jardín privado - copia.webp",
-      "/img/portfolio/carrusel 05 jardín privado/jardín privado - copia (2).webp"
+      "/img/portfolio/carrusel 05 chipeado/chipeado00.webp",
+      "/img/portfolio/carrusel 05 chipeado/chipeado01.webp",
+      "/img/portfolio/carrusel 05 chipeado/chipeado02.webp",
+      "/img/portfolio/carrusel 05 chipeado/chipeado03.webp",
     ]
   },
   {
