@@ -78,6 +78,7 @@ const projects: Project[] = [
       "/img/portfolio/carrusel 03 altura/altura04.webp",
       "/img/portfolio/carrusel 03 altura/altura05.webp",
       "/img/portfolio/carrusel 03 altura/altura06.webp",
+      "/img/portfolio/carrusel 03 altura/altura07.webp",
     ]
   },
   {
