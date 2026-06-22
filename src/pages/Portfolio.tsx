@@ -64,17 +64,20 @@ const projects: Project[] = [
   },
   {
     id: 3,
-    title: "Sustentación dinámica con Cobra System",
-    location: "Olivos",
+    title: "PODA EN ALTURA",
+    location: "ZONA ZUR",
     date: "Enero 2024",
-    service: "Ingeniería arbórea",
-    description: "Instalación de cableado dinámico Cobra en Tipuana tipu de gran porte para reforzar codominancia estructural sin restringir el movimiento natural del árbol.",
-    image: "/img/portfolio/Cobra System.webp",
+    service: "Gestión Integral de Arboricultura - Poda en Altura",
+    description: "La poda en altura es una especialidad de la arboricultura que implica el trabajo técnico en ejemplares de gran porte donde el acceso a las ramas superiores no puede realizarse desde el suelo ni con escaleras convencionales.",
+    image: "/img/portfolio/altura.webp",
     span: "",
     images: [
-      "/img/portfolio/carrusel 03 Cobra System/Cobra System.webp",
-      "/img/portfolio/carrusel 03 Cobra System/Cobra System - copia.webp",
-      "/img/portfolio/carrusel 03 Cobra System/Cobra System - copia (2).webp"
+      "/img/portfolio/carrusel 03 altura/altura01.webp",
+      "/img/portfolio/carrusel 03 altura/altura02.webp",
+      "/img/portfolio/carrusel 03 altura/altura03.webp",
+      "/img/portfolio/carrusel 03 altura/altura04.webp",
+      "/img/portfolio/carrusel 03 altura/altura05.webp",
+      "/img/portfolio/carrusel 03 altura/altura06.webp",
     ]
   },
   {
