@@ -100,10 +100,10 @@ const projects: Project[] = [
   {
     id: 5,
     title: "Diagnóstico de arbolado urbano",
-    location: "Vicente López",
+    location: "Argentina, zona norte",
     date: "Noviembre 2023",
     service: "Consultoría VTA",
-    description: "Evaluación visual de riesgo (VTA) sobre 47 ejemplares en avenida principal. Inventario digital, dictamen técnico y plan de manejo a 5 años.",
+    description: "Evaluación visual de riesgo (VTA) sobre 47 ejemplares en avenidas principales y espacios verdes urbanos, plazas. Inventario digital, dictamen técnico y plan de manejo a 5 años.",
     image: "/img/portfolio/arbolado urbano.webp",
     span: "",
     images: [
@@ -111,7 +111,10 @@ const projects: Project[] = [
       "/img/portfolio/carrusel 01 arbolado urbano/carurb02.webp",
       "/img/portfolio/carrusel 01 arbolado urbano/carurb03.webp",
       "/img/portfolio/carrusel 01 arbolado urbano/carurb04.webp",
-      "/img/portfolio/carrusel 01 arbolado urbano/carurb05.webp"
+      "/img/portfolio/carrusel 01 arbolado urbano/carurb05.webp",
+      "/img/portfolio/carrusel 01 arbolado urbano/carurb06.webp",
+      "/img/portfolio/carrusel 01 arbolado urbano/carurb07.webp",
+      "/img/portfolio/carrusel 01 arbolado urbano/carurb08.webp",
     ]
   },
   {
