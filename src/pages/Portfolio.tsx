@@ -132,6 +132,7 @@ const projects: Project[] = [
       "/img/portfolio/carrusel 07 post-tormenta/post-tormenta 03.webp",
       "/img/portfolio/carrusel 07 post-tormenta/post-tormenta 04.webp",
       "/img/portfolio/carrusel 07 post-tormenta/post-tormenta 05.webp",
+      ]
   },
   {
     id: 7,
