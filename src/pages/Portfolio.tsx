@@ -123,14 +123,15 @@ const projects: Project[] = [
     location: "CABA — Belgrano",
     date: "Octubre 2023",
     service: "Emergencia 24h",
-    description: "Intervención de emergencia tras temporal: retiro de ramas peligrosas, reducción de copa y evaluación estructural de plátano centenario.",
+    description: "Intervención de emergencia tras temporal: retiro de ramas peligrosas, reducción de copa y evaluación estructural de los árboles.",
     image: "/img/portfolio/post-tormenta.webp",
     span: "",
     images: [
-      "/img/portfolio/carrusel 07 post-tormenta/post-tormenta.webp",
-      "/img/portfolio/carrusel 07 post-tormenta/post-tormenta - copia.webp",
-      "/img/portfolio/carrusel 07 post-tormenta/post-tormenta - copia (2).webp"
-    ]
+      "/img/portfolio/carrusel 07 post-tormenta/post-tormenta 01.webp",
+      "/img/portfolio/carrusel 07 post-tormenta/post-tormenta 02.webp",
+      "/img/portfolio/carrusel 07 post-tormenta/post-tormenta 03.webp",
+      "/img/portfolio/carrusel 07 post-tormenta/post-tormenta 04.webp",
+      "/img/portfolio/carrusel 07 post-tormenta/post-tormenta 05.webp",
   },
   {
     id: 7,
