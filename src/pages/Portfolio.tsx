@@ -136,17 +136,19 @@ const projects: Project[] = [
   },
   {
     id: 7,
-    title: "Manejo integral de Country La Reserva",
-    location: "Pilar",
-    date: "2023 — 2024",
-    service: "Plan anual",
-    description: "Contrato anual de gestión arbórea: monitoreo, podas programadas, fitosanidad y plantación de reposición en 12 hectáreas.",
-    image: "/img/portfolio/Country La Reserva.webp",
+    title: "PODA SANITARIA Y DE FORMACIÓN",
+    location: "Saavedra, Distrito Federal, Argentina",
+    date: "2022",
+    service: "Poda sanitaria y ejecución de la evaluación de riesgo. Plan anual de manejo de arbolado",
+    description: "La poda sanitaria es una intervención técnica enfocada exclusivamente en la salud y la vitalidad del árbol. Su objetivo principal es la eliminación de elementos que impiden el desarrollo normal del ejemplar o que pueden facilitar la entrada de plagas y enfermedades.",
+    image: "/img/portfolio/sanitaria.webp",
     span: "md:col-span-2",
     images: [
-      "/img/portfolio/carrusel 04 Country La Reserva/Country La Reserva.webp",
-      "/img/portfolio/carrusel 04 Country La Reserva/Country La Reserva - copia.webp",
-      "/img/portfolio/carrusel 04 Country La Reserva/Country La Reserva - copia (2).webp"
+      "/img/portfolio/carrusel 04 Poda sanitaria/sanitaria01.webp",
+      "/img/portfolio/carrusel 04 Poda sanitaria/sanitaria02.webp",
+      "/img/portfolio/carrusel 04 Poda sanitaria/sanitaria03.webp",
+      "/img/portfolio/carrusel 04 Poda sanitaria/sanitaria04.webp",
+      "/img/portfolio/carrusel 04 Poda sanitaria/sanitaria05.webp",
     ]
   },
 ];
