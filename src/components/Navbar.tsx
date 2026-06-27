@@ -52,7 +52,7 @@ const Navbar = () => {
         >
           <Link to="/" className="flex items-center group">
             <img
-              src="/img/logo%20navbar%20y%20footer.png"
+              src="/img/logo.png"
               alt="EDC Arborismo"
               className="h-7 w-auto md:h-9 object-contain"
               loading="eager"

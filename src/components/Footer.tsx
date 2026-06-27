@@ -21,7 +21,7 @@ const Footer = () => {
           <div className="md:col-span-2">
             <div className="flex items-center gap-2.5 mb-5">
               <img
-                src="/img/logo%20navbar%20y%20footer.png"
+                src="/img/logo.png"
                 alt="EDC Arborismo"
                 className="h-7 w-auto md:h-9 object-contain"
                 loading="lazy"
